@@ -1,0 +1,130 @@
+Website Setup Guide: From Zero to Launch
+A beginner-friendly guide to our website infrastructure
+1. Basic Concepts
+What is GitHub?
+
+Think of GitHub as Google Docs for code
+It stores all our website files
+Keeps track of all changes (like version history in Google Docs)
+Allows multiple people to work on the site without conflicts
+
+What is GitHub Pages?
+
+A free service that turns our GitHub files into a live website
+Automatically updates when we make changes
+Provides a URL like yourusername.github.io/project-name
+
+2. Local Development Setup
+Required Software
+
+GitHub Desktop
+
+Like Dropbox, but for code
+Download from: https://desktop.github.com/
+Used to sync files between your computer and GitHub
+
+
+Visual Studio Code (VS Code)
+
+Like Microsoft Word, but for code
+Download from: https://code.visualstudio.com/
+Used to edit website files
+
+
+Node.js
+
+The engine that runs our development tools
+Download from: https://nodejs.org/
+Choose the LTS (Long Term Support) version
+
+
+
+3. Website Structure
+Key Folders and Files
+Copycoordination-hub/
+├── src/                  # Where all our source files live
+│   ├── index.html       # Main page
+│   ├── styles/          # CSS (styling) files
+│   ├── scripts/         # TypeScript files (functionality)
+│   └── assets/          # Images, fonts, etc.
+└── dist/                # Generated website files (don't edit these!)
+Important Terms
+
+HTML: The content of the website (text, structure)
+CSS: The styling (colors, layouts, fonts)
+TypeScript: The functionality (interactivity, data handling)
+
+4. Making Changes
+Simple Content Updates
+
+Open GitHub Desktop
+Click "Fetch origin" to get latest changes
+Open VS Code through GitHub Desktop
+Make your changes
+Save the files
+Back in GitHub Desktop:
+
+Review your changes
+Write a short description
+Click "Commit to main"
+Click "Push origin"
+
+
+
+Common Tasks
+
+Update text: Edit relevant .html files
+Add images: Place in src/assets folder
+Change styles: Edit files in src/styles
+
+5. Development Workflow
+Running the Site Locally
+
+Open Terminal/Command Prompt
+Navigate to project folder
+Run: npm start
+View site at: http://localhost:1234
+
+Building for Production
+
+Run: npm run build
+The dist folder will contain the final website
+
+6. Best Practices
+Do's
+
+✅ Always pull latest changes before starting work
+✅ Test changes locally before pushing
+✅ Write clear commit messages
+✅ Keep images optimized (compressed)
+
+Don'ts
+
+❌ Edit files directly on GitHub
+❌ Edit files in the dist folder
+❌ Push untested changes
+❌ Upload large media files
+
+7. Getting Help
+Common Issues
+
+Changes not showing up?
+
+Check if you pushed the changes
+Wait a few minutes for GitHub Pages to update
+
+
+Local site not working?
+
+Make sure Node.js is installed
+Run npm install in the project folder
+Check if npm start shows any errors
+
+
+
+Where to Get Help
+
+Check the project documentation
+Ask in the team chat
+Google the error message
+Check Stack Overflow

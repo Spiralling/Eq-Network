@@ -1,0 +1,20 @@
+{
+  "name": "eq-network",
+  "version": "1.0.0",
+  "description": "Community hub for coordination technology ecosystems",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "clean": "rm -rf dist/*",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.64",
+    "parcel": "^2.13.0",
+    "prettier": "^2.8.8",
+    "typescript": "^5.6.3"
+  }
+}
